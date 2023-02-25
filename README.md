@@ -28,10 +28,10 @@
 
 <p style="text-align: justify">The following packages could be a good starting point for most of the projects. Let's dive into each one:</b>
 
-### Core package
+<h2>The <b>Core</b> package</h2>
 
-### Logging package
+<h2>The <b>Logging</b> package</h2>
 
-### <i>[Business domain]</i>.Domain packages
+<h2>The <b><i>[Business domain]</i>.Domain</b> packages</h2>
 
-### Microservices packages
+<h2>The <b>API/Workers/Microservices</b> packages</h2>
