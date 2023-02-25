@@ -46,7 +46,7 @@ public class BaseModel {
     // this is designed primarilly to work with
     // Entity Framework, to avoid underired mappings
     // you should mark the attributes that will be used
-    // as "auxiliary" to handle the models with
+    // as "auxiliary" to handle the models as
     // virtual
     public virtual string CurrentUserId { get; set; }
 }
