@@ -33,6 +33,25 @@
 <h3>The <i>Models</i></h3>
 <p>Define the base that will help map to ORM framework and will support common actions like logging changes.</p>
 
+```C#
+// This base class already initialize the id
+// attribute e define a standard to identify an
+// entity when mapping it to an ORM framework
+public class BaseModel {
+    ...
+    public Guid Id {get; set;} = Guid.NewGuid();
+    ...
+    // Other common attributes colud be defined
+    // but paying attention to the constraint that
+    // this is designed primarilly to work with
+    // Entity Framework, to avoid underired mappings
+    // you should mark the attributes that will be used
+    // as "auxiliary" to handle the models with
+    // virtual
+    public virtual string CurrentUserId { get; set; }
+}
+```
+
 <h3>The <i>Types</i></h3>
 <p>Some types could be defined globally to avoid duplication of code that define the same thing across the projects. For example let's suppose we need to store money type in different classes.We have several approaches, but let's compare two of them:</p>
 
