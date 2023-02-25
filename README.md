@@ -101,7 +101,7 @@ class JournalEntry {
 ```C#
 public interface IRepository<TModel> where TModel : BaseModel
 {
-    public string? LastError { get; set; }
+    string? LastError { get; set; }
 
     IEnumerable<TModel> FindMany(Func<TModel, bool> filter);
     TModel FindById(Guid id);
