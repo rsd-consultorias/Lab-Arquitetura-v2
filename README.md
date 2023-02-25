@@ -37,7 +37,8 @@
 <p>Some types could be defined globally to avoid duplication of code that define the same thing across the projects. For example let's suppose we need to store money type in different classes.We have several approaches, but let's compare two of them:</p>
 
 ```C#
-// This attend the solution, but what to do when currency exchange is required, i.e. an offshore employee is contracted and will receive in the local currency?
+// This attend the solution, but what to do when currency exchange is required, 
+// i.e. an offshore employee is contracted and will receive in the local currency?
 class Employee {
     ...
     public decimal CurrentSalary {get; set;}
