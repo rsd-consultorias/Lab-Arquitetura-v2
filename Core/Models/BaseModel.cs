@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.Serialization;
+
 namespace Core.Models
 {
 	public abstract class BaseModel
@@ -39,6 +41,6 @@ namespace Core.Models
 		{
 			Validations.Add(validation);
 		}
-	}
+    }
 }
 

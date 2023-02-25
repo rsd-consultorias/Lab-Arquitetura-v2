@@ -3,11 +3,11 @@ using Core.Models;
 
 namespace Logging
 {
-	public interface IModelLogging<TModel> where TModel : BaseModel
+	public interface IModelLogging
     {
-		void LogCreated(TModel createdModel);
-        void LogChanged(TModel changedModel, TModel oldModel);
-        void LogDeleted(TModel deletedModel);
+		void LogCreated(BaseModel createdModel);
+        void LogChanged(BaseModel changedModel, BaseModel oldModel);
+        void LogDeleted(BaseModel deletedModel);
     }
 }
 

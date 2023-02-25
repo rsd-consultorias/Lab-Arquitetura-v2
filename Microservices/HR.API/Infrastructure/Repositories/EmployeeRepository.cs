@@ -6,10 +6,10 @@ namespace HR.API.Infrastructure.Repositories
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        private readonly IModelLogging<Employee> _modelLogging;
+        private readonly IModelLogging _modelLogging;
         private readonly IExceptionLogging _exceptionLogging;
 
-        public EmployeeRepository(IModelLogging<Employee> modelLogging, IExceptionLogging exceptionLogging)
+        public EmployeeRepository(IModelLogging modelLogging, IExceptionLogging exceptionLogging)
         {
             _modelLogging = modelLogging;
             _exceptionLogging = exceptionLogging;
