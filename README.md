@@ -64,7 +64,7 @@ class Employee {
     ...
 }
 
-// The natural decision could be add Currency attribute
+// The natural decision could be adding Currency attribute
 class Employee {
     ...
     public decimal CurrentSalary {get; set;}
