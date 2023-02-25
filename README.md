@@ -28,7 +28,7 @@
 
 <p style="text-align: justify">The following packages could be a good starting point for most of the projects. Let's dive into each one:</b>
 
-<h2>The <b>Core</b> package</h2>
+<h2>The <strong>Core</strong> package</h2>
 
 <h2>The <b>Logging</b> package</h2>
 
