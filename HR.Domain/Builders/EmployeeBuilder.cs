@@ -17,7 +17,7 @@ namespace HR.Domain.Builders
             {
                 error += "National ID is required. ";
             }
-            if (employee.NationalId!.Length != 11)
+            if (employee.NationalId != null && employee.NationalId!.Length != 11)
             {
                 error += "National ID length should have 11 digits. ";
             }
