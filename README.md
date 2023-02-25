@@ -44,19 +44,15 @@ after delivered to production.</p>
 <p>Define the base that will help map to ORM framework and will support common actions like logging changes.</p>
 
 ```C#
-// This base class already initialize the id
-// attribute and define a standard to identify an
+// This base class already initialize the id attribute and define a standard to identify an
 // entity when mapping it to an ORM framework
 public class BaseModel {
     ...
     public Guid Id {get; set;} = Guid.NewGuid();
     ...
-    // Other common attributes could be defined
-    // but paying attention to the constraint that
-    // this is designed primarilly to work with
-    // Entity Framework, to avoid underired mappings
-    // you should mark the attributes that will be used
-    // as "auxiliary" to handle the models as
+    // Other common attributes could be defined but paying attention to the constraint that
+    // this is designed primarilly to work with Entity Framework, to avoid underired mappings
+    // you should mark the attributes that will be used as "auxiliary" to handle the models as
     // virtual
     public virtual string CurrentUserId { get; set; }
 }
@@ -64,7 +60,8 @@ public class BaseModel {
 
 <h3>The <i>Types</i></h3>
 <p>Some types could be defined globally to avoid code replication that define the same thing across the projects.
-For example let's suppose we need to store money type in different classes. We have several approaches, but let's compare two of them:</p>
+For example let's suppose we need to store money type in different classes. We have several approaches, but let's
+compare two of them:</p>
 
 ```C#
 // This attend the solution, but what to do when currency exchange is required, 
@@ -126,6 +123,8 @@ public interface IRepository<TModel> where TModel : BaseModel
 ```
 
 <h2>The <i>Logging</i> project</h2>
+<p>Defines interfaces to be implemented by API, Workers and Microservices to handle the logs needed to audit
+ the actions taken by the user. Three main types of log are defined: Exception, Model and Navigation.</p>
 
 <h2>The <i>[Business domain].Domain</i> projects</h2>
 
