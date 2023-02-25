@@ -38,7 +38,7 @@ after delivered to production.</p>
 
 <p style="text-align: justify">The following packages could be a good starting point for most of the projects. Let's dive into each one:</b>
 
-<h2>The <i>Core</i> package</h2>
+<h2>The <i>Core</i> project</h2>
 
 <h3>The <i>Models</i></h3>
 <p>Define the base that will help map to ORM framework and will support common actions like logging changes.</p>
@@ -125,11 +125,11 @@ public interface IRepository<TModel> where TModel : BaseModel
 }
 ```
 
-<h2>The <i>Logging</i> package</h2>
+<h2>The <i>Logging</i> project</h2>
 
-<h2>The <i>[Business domain].Domain</i> packages</h2>
+<h2>The <i>[Business domain].Domain</i> projects</h2>
 
-<h2>The <b>API/Workers/Microservices</b> packages</h2>
+<h2>The <b>API/Workers/Microservices</b> projects</h2>
 
 <h3>The <i>Program.cs</i> file</h3>
 <h3>The <i>Controllers</i></h3>
