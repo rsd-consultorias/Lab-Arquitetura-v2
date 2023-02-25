@@ -1,16 +1,20 @@
 <h1>[dotnet] Lab Arquitetura - v2</h1>
 
 <h2>Roadmap</h2>
-- Concise Business Core isolation
-- At least a minimal code reusability and standardization
-- Define a starting point to solve common problems but it's not a final solution
-- to be continued ...
+<ul>
+    <li>Concise Business Core isolation</li>
+    <li>At least a minimal code reusability and standardization</li>
+    <li>Define a starting point to solve common problems but it's not a final solution</li>
+    <li>to be continued ...</li>
+</ul>
 <br /><br />
 
 <h2>Constraints</h2>
-- Database agnostic but designed primarilly for adopting Microsoft Entity Framework
-- Frontend framework agnostic but designed primarilly for adopting SPA like Angular, Vue and React
-- to be continued ...
+<ul>
+    <li>Database agnostic but designed primarilly for adopting Microsoft Entity Framework</li>
+    <li>Frontend framework agnostic but designed primarilly for adopting SPA like Angular, Vue and React</li>
+    <li>to be continued ...</li>
+</ul>
 <br /><br />
 
 <h2>The design explained</h2>
