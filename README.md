@@ -7,7 +7,6 @@
     <li>Define a starting point to solve common problems but it's not a final solution</li>
     <li>to be continued ...</li>
 </ul>
-<br /><br />
 
 <h2>Constraints</h2>
 <ul>
@@ -15,7 +14,7 @@
     <li>Frontend framework agnostic but designed primarilly for adopting SPA like Angular, Vue and React</li>
     <li>to be continued ...</li>
 </ul>
-<br /><br />
+<br />
 
 <h2>The design explained</h2>
 
