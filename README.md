@@ -95,6 +95,25 @@ class JournalEntry {
 }
 ```
 
+<h3>The <i>Interfaces</i></h3>
+<p>Defines the interfaces or interfaces bases that are common in every project. One of most common is the Repository<sup>2</sup>:</p>
+
+```C#
+public interface IRepository<TModel> where TModel : BaseModel
+{
+    public string? LastError { get; set; }
+
+    IEnumerable<TModel> FindMany(Func<TModel, bool> filter);
+    TModel FindById(Guid id);
+
+    bool Create(TModel model);
+    bool Update(TModel model);
+    bool DeleteById(Guid id);
+
+    bool DeleteMany(Func<TModel> filter);
+}
+```
+
 <h2>The <i>Logging</i> package</h2>
 
 <h2>The <i>[Business domain].Domain</i> packages</h2>
@@ -102,3 +121,8 @@ class JournalEntry {
 <h2>The <b>API/Workers/Microservices</b> packages</h2>
 
 <h1>What about frontends?</h1>
+
+<h2>References</h2>
+
+<sup>1</sup> [Domain Driven Design](https://www.domainlanguage.com/)
+<sup>2</sup> [Repository Pattern](https://martinfowler.com/eaaCatalog/repository.html)
