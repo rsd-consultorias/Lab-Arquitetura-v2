@@ -1,8 +1,7 @@
-using Logging;
+using Logging.Interfaces;
 using Core.Models;
-using HR.Domain.Models;
 
-namespace HR.API.Infrastructure.Logging
+namespace Logging
 {
     public class ModelLogging : IModelLogging
     {

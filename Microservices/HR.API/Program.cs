@@ -1,5 +1,5 @@
-using HR.API.Infrastructure.Logging;
 using Logging;
+using Logging.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

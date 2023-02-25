@@ -1,6 +1,6 @@
 using HR.Domain.Interfaces;
 using HR.Domain.Models;
-using Logging;
+using Logging.Interfaces;
 
 namespace HR.API.Infrastructure.Repositories
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Core.Models;
 
-namespace Logging
+namespace Logging.Interfaces
 {
 	public interface IModelLogging
     {

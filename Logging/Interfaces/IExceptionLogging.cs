@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Logging
+namespace Logging.Interfaces
 {
     public interface IExceptionLogging
     {
