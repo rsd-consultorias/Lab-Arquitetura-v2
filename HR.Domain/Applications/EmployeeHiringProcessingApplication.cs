@@ -20,9 +20,8 @@ namespace HR.Domain.Applications
         public ApplicationResponse Start(string name, DateTime birthDate, string nationalId)
         {
             var employee = EmployeeBuilder.BuildHiringEmployee(name, birthDate, nationalId);
-            employee.Validate();
 
-            if (employee.IsValid)
+            if (employee.Validate())
             {
                 if (_repository.Create(employee)) { return new ApplicationResponse(false, _repository.LastError); };
                 if (_payrollService.StartProfileCreation(employee)) { return new ApplicationResponse(false, _payrollService.LastError); }
@@ -38,9 +37,8 @@ namespace HR.Domain.Applications
         public ApplicationResponse ApplyEligibleSalary(Money salary, Employee employee)
         {
             employee = EmployeeBuilder.ApplyAllValidations(employee);
-            employee.Validate();
 
-            if (employee.IsValid)
+            if (employee.Validate())
             {
                 if (!_repository.Update(employee))
                 {

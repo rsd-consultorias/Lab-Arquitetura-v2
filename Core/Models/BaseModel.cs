@@ -19,7 +19,7 @@ namespace Core.Models
             Validations = new List<Func<BaseModel, string?>>();
         }
 
-		public void Validate()
+		public bool Validate()
 		{
 			Errors.Clear();
 
@@ -31,6 +31,8 @@ namespace Core.Models
 					Errors.Add(error);
 				}
 			}
+
+			return IsValid;
 		}
 
 		public void AddValidation(Func<BaseModel, string?> validation)
