@@ -124,5 +124,7 @@ public interface IRepository<TModel> where TModel : BaseModel
 
 <h2>References</h2>
 
-<sup>1</sup> [Domain Driven Design](https://www.domainlanguage.com/)
-<sup>2</sup> [Repository Pattern](https://martinfowler.com/eaaCatalog/repository.html)
+<ul>
+    <li><sup>1</sup> [Domain Driven Design](https://www.domainlanguage.com/)</li>
+    <li><sup>2</sup> [Repository Pattern](https://martinfowler.com/eaaCatalog/repository.html)</li>
+</ul>
