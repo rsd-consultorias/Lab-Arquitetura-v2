@@ -31,9 +31,49 @@
 <h2>The <i>Core</i></h2>
 
 <h3>The <i>Models</i></h3>
-<p></p>
+<p>Define the base that will help map to ORM framework and will support common actions like logging changes.</p>
 
 <h3>The <i>Types</i></h3>
+<p>Some types could be defined globally to avoid duplication of code that define the same thing across the projects. For example let's suppose we need to store money type in different classes.We have several approaches, but let's compare two of them:</p>
+
+```C#
+// This attend the solution, but what to do when currency exchange is required, i.e. an offshore employee is contracted and will receive in the local currency?
+class Employee {
+    ...
+    public decimal CurrentSalary {get; set;}
+    ...
+}
+
+// The natural decision coud be add Currency attribute
+class Employee {
+    ...
+    public decimal CurrentSalary {get; set;}
+    public string Currency {get; set;}
+    ...
+}
+
+// What if we have a specific type for money?
+struct Money {
+    ...
+    public decimal Amount {get; set;}
+    public string Currency {get; set;}
+    ...
+}
+
+// It could be reused in several models
+class Employee {
+    ...
+    public Money CurrentSalary {get; set;}
+    ...
+}
+
+class JournalEntry {
+    ...
+    public decimal Debits {get; set;}
+    public decimal Credits {get; set;}
+    ...
+}
+```
 
 <h2>The <i>Logging</i> package</h2>
 
