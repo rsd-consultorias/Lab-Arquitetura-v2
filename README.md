@@ -26,6 +26,8 @@
 
 <p style="text-align: justify">The core objective with this design is define a couple of standards and patterns to achieve a minimal working software that will be the basis to development of the project and with the flexibility to change when needed and extended when it was required after delivered to production.</p>
 
+<p style="text-align: justify">The following packages could be a good starting point for most of the projects. Let's dive into each one:</b>
+
 ### Core package
 
 ### Logging package
