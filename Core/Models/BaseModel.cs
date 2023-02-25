@@ -3,11 +3,16 @@ namespace Core.Models
 {
 	public abstract class BaseModel
     {
+		// Identify the entity
 		public Guid Id { get; set; } = Guid.NewGuid();
 
+		// Help handling errors and entity validations
 		public virtual ICollection<string> Errors { get; private set; } = new List<string>();
 		public virtual bool IsValid { get { return Errors.Count == 0; } }
 		public virtual ICollection<Func<BaseModel, string?>> Validations { get; private set; }
+
+		// Help handling data audit
+		public virtual string CurrentUserId { get; set; }
 
 		public BaseModel()
 		{

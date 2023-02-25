@@ -1,5 +1,5 @@
 ﻿using System;
-namespace HR.Domain.Types
+namespace Core.Types
 {
 	public record ApplicationResponse
 	{

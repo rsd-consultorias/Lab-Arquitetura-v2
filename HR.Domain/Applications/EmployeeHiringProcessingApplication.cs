@@ -3,7 +3,6 @@ using Core.Types;
 using HR.Domain.Builders;
 using HR.Domain.Interfaces;
 using HR.Domain.Models;
-using HR.Domain.Types;
 
 namespace HR.Domain.Applications
 {

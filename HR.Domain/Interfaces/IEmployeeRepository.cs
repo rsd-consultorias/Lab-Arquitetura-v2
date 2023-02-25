@@ -6,6 +6,7 @@ namespace HR.Domain.Interfaces
 {
 	public interface IEmployeeRepository: IRepository<Employee>
     {
+		// Specify specialized methods
 	}
 }
 
