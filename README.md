@@ -53,7 +53,7 @@ public class BaseModel {
 ```
 
 <h3>The <i>Types</i></h3>
-<p>Some types could be defined globally to avoid code replication that define the same thing across the projects. For example let's suppose we need to store money type in different classes.We have several approaches, but let's compare two of them:</p>
+<p>Some types could be defined globally to avoid code replication that define the same thing across the projects. For example let's suppose we need to store money type in different classes. We have several approaches, but let's compare two of them:</p>
 
 ```C#
 // This attend the solution, but what to do when currency exchange is required, 
