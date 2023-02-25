@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Applications\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Models\" />
+    <None Remove="Services\" />
+    <None Remove="Types\" />
+    <None Remove="Builders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Applications\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="Types\" />
+    <Folder Include="Builders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+</Project>
