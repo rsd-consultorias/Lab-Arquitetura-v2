@@ -4,7 +4,7 @@
 <ul>
     <li>Concise Business Core isolation</li>
     <li>At least a minimal code reusability and standardization</li>
-    <li>Define a starting point to solve common problems but it's not a final solution</li>
+    <li>Define a starting point to solve common problems <i>(but it's not a final solution)</i></li>
     <li>to be continued ...</li>
 </ul>
 
@@ -100,3 +100,5 @@ class JournalEntry {
 <h2>The <i>[Business domain].Domain</i> packages</h2>
 
 <h2>The <b>API/Workers/Microservices</b> packages</h2>
+
+<h1>What about frontends?</h1>
