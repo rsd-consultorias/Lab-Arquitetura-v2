@@ -64,7 +64,7 @@ class Employee {
     ...
 }
 
-// The natural decision coud be add Currency attribute
+// The natural decision could be add Currency attribute
 class Employee {
     ...
     public decimal CurrentSalary {get; set;}
@@ -89,8 +89,8 @@ class Employee {
 
 class JournalEntry {
     ...
-    public decimal Debits {get; set;}
-    public decimal Credits {get; set;}
+    public Money Debits {get; set;}
+    public Money Credits {get; set;}
     ...
 }
 ```
