@@ -41,7 +41,7 @@ public class BaseModel {
     ...
     public Guid Id {get; set;} = Guid.NewGuid();
     ...
-    // Other common attributes colud be defined
+    // Other common attributes could be defined
     // but paying attention to the constraint that
     // this is designed primarilly to work with
     // Entity Framework, to avoid underired mappings
