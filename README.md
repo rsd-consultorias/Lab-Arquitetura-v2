@@ -134,6 +134,8 @@ public interface IRepository<TModel> where TModel : BaseModel
 <h3>The <i>Controllers</i></h3>
 <h3>The <i>Infrastructure</i></h3>
 
+<h1>Unit tests with NUnit or XUnit</h1>
+
 <h1>What about frontends?</h1>
 
 <h2>References</h2>
